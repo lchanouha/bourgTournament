@@ -1,0 +1,13 @@
+/belote.tmp
+/bin
+/database.tmp
+/hsqldb-2.2.8
+/Images
+/.classpath
+/.project
+/*.jar
+/*.exe
+/launch4j.*
+/*.zip
+/setup.nsi
+/.settings
