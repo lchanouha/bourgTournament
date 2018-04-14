@@ -21,6 +21,7 @@ import javax.swing.JTextArea;
 import javax.swing.ListSelectionModel;
 
 import controller.ApplicationController;
+import main.bourgTournament;
 import model.Database;
 import model.Tournoi;
 
@@ -73,19 +74,11 @@ public class VueAccueilGestionTournois extends Vue {
 		
 		conteneurPrimaire.setLayout(new BoxLayout(conteneurPrimaire, BoxLayout.Y_AXIS));
 		conteneurPrimaire.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
-		
-        JLabel description = new JLabel("Description :");
-        
+		        
         Box bh3 = Box.createHorizontalBox();
         
-        bh3.add(description);
         bh3.add(Box.createHorizontalGlue());
         conteneurPrimaire.add(bh3);
-		
-        JTextArea gt = new JTextArea("Gestion de tournoi\nLouis Chanouha, 2018\nlouis@chanouha.fr\nCréé initialement pour les besoins du tournoi de belote de Bournazel");
-		gt.setAlignmentX(Component.CENTER_ALIGNMENT);
-		gt.setEditable(false);
-		conteneurPrimaire.add(gt);
 		
 		// Recherche de la liste des tournois
 		JPanel ListeTournois = new JPanel();
@@ -118,6 +111,11 @@ public class VueAccueilGestionTournois extends Vue {
 		bh.add(creerTournoi);
 		bh.add(selectTournoi);	
 		bh.add(deleteTournoi);
+		
+		JTextArea gt = new JTextArea("BourgTournament " + bourgTournament.VERSION + "\nhttp://bourgtournament.chanouha.fr");
+		gt.setAlignmentX(Component.CENTER_ALIGNMENT);
+		gt.setEditable(false);
+		conteneurPrimaire.add(gt);
 		
 		conteneurPrimaire.updateUI();
 

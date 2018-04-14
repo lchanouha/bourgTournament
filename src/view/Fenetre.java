@@ -28,6 +28,7 @@ import javax.swing.UIManager;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import controller.ApplicationController;
+import main.bourgTournament;
 
 
 
@@ -39,7 +40,7 @@ public class Fenetre extends JFrame {
 	private static final long serialVersionUID = 1L;
     
     
-    private final String statut_deft = "Gestion de tournois v4.0-20180218 - ";
+    private final String statut_deft = "Gestion de tournois - " + bourgTournament.VERSION;
 
 	// Liens objets
 	private Statement s;
